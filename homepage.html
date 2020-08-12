@@ -1,0 +1,24 @@
+<span style="font-size:3em">Torrent Together</span>
+<form id="fileForm" onsubmit="return false"> <!-- pevent default submission -->
+    <input id="fileInput" type="file">
+    </br>
+    <button id="submitbutton" type="submit">Watch it!</button>
+</form>
+<div>
+    The file should be streamable by an html5 video element.
+    Simply share the link of the page you are redirected to, and then play the video.
+    Anyone visiting that page will sync to your playback.
+</div>
+
+<style>
+    body {
+        height: 100%;
+    }
+
+    body, #fileform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+</style>

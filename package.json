@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "test": "standard",
+    "start": "npm run build && node server.js",
+    "bundle": "browserify -p tinyify -t brfs index.js > bundle.js",
+    "generate-worker": "echo \"(path) => path.startsWith('/magnet/')\" | stream-to-sw > worker.js",
+    "build": "npm run bundle && npm run generate-worker"
+  },
+  "author": "KayleePop",
+  "license": "MIT",
+  "devDependencies": {
+    "brfs": "^2.0.2",
+    "browserify": "^16.5.2",
+    "standard": "^14.3.4",
+    "tinyify": "^3.0.0"
+  },
+  "dependencies": {
+    "end-of-stream": "^1.4.1",
+    "idbkv-chunk-store": "^1.1.2",
+    "range-parser": "^1.2.1",
+    "stream-to-sw": "^1.1.0",
+    "webtorrent": "^0.108.0"
+  }
+}
