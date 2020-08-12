@@ -3,7 +3,7 @@
     "test": "standard",
     "start": "npm run build && node server.js",
     "bundle": "browserify -p tinyify -t brfs index.js > bundle.js",
-    "generate-worker": "echo \"(path) => path.startsWith('/magnet/')\" | stream-to-sw > worker.js",
+    "generate-worker": "echo \"(path) => path.startsWith('/torrent-together/magnet/')\" | stream-to-sw > worker.js",
     "build": "npm run bundle && npm run generate-worker"
   },
   "author": "KayleePop",

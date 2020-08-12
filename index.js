@@ -1,4 +1,4 @@
-const PREFIX = ''
+const PREFIX = '/torrent-together'
 
 const parseRange = require('range-parser')
 const registerStreamToSW = require('stream-to-sw')
